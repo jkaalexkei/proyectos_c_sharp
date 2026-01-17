@@ -10,6 +10,8 @@ namespace ejercicioDiezArrays
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Ejercicio 10: Arrays");
         }
     }
 }
