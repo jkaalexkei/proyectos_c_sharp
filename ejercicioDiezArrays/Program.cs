@@ -12,6 +12,7 @@ namespace ejercicioDiezArrays
         {
 
             Console.WriteLine("Ejercicio 10: Arrays");
+            Console.WriteLine("----------------------");
         }
     }
 }
