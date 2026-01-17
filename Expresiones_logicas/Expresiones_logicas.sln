@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36310.24 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expresiones_logicas", "Expresiones_logicas\Expresiones_logicas.csproj", "{DE67ADD3-DBEE-4159-B850-1A3A5AC3739B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE67ADD3-DBEE-4159-B850-1A3A5AC3739B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE67ADD3-DBEE-4159-B850-1A3A5AC3739B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE67ADD3-DBEE-4159-B850-1A3A5AC3739B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE67ADD3-DBEE-4159-B850-1A3A5AC3739B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A64ADFD-8BBB-4CF9-BE98-F3B157D22499}
+	EndGlobalSection
+EndGlobal

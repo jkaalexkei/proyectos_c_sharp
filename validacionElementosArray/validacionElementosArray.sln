@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "validacionElementosArray", "validacionElementosArray.csproj", "{B8BFD5D7-EE6C-42F0-A264-036E2B3F47C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8BFD5D7-EE6C-42F0-A264-036E2B3F47C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8BFD5D7-EE6C-42F0-A264-036E2B3F47C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8BFD5D7-EE6C-42F0-A264-036E2B3F47C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8BFD5D7-EE6C-42F0-A264-036E2B3F47C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED58A76C-1FC0-43D2-A998-12A132276F4D}
+	EndGlobalSection
+EndGlobal
