@@ -11,8 +11,8 @@ namespace ejercicioOchoArrays
         static void Main(string[] args)
         {
             /*
-             Ejercicio 1 Array como parámetros a métodos: Suma de elementos
-                Crea un programa que contenga un método que acepta un array de enteros como parámetro y calcula la suma de todos sus elementos.
+             Ejercicio 1 Array Jagged como parámetros a métodos: Suma de elementos
+                Crea un programa que contenga un método que acepta un array jagged de enteros como parámetro y calcula la suma de todos sus elementos.
 
                 Reglas:
 
@@ -53,7 +53,7 @@ namespace ejercicioOchoArrays
 
         static int sumaNumeros(int[][] jaggedNumeros)
         {
-            Console.WriteLine("Mensaje desde la funcion");
+            Console.WriteLine("Procesando suma desde la funcion");
             int suma = 0;
             //aca agregamos un doble bucle foreach para recorrer columnas y filas del arrayjagged
             foreach (int[] item in jaggedNumeros)//recorremos filas
