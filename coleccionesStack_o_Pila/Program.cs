@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +10,88 @@ namespace coleccionesStack_o_Pila
     {
         static void Main(string[] args)
         {
+            //Colecciones  Stack
 
+            int opcion = 0;
+            int numero = 0;
+            bool encontrado = false;
+
+            Stack miPila = new Stack();//inicializamos el Stack
+
+            //se usa el bucle do while cuando al menos el programa se deba ejecutar una vez
+            do
+            {
+                //menu de opciones
+                Console.WriteLine("1. Push");
+                Console.WriteLine("2. Pop");
+                Console.WriteLine("3. Clear");
+                Console.WriteLine("4. Contains");
+                Console.WriteLine("5. Listar");
+                Console.WriteLine("6. Salir");
+                Console.WriteLine("Escoge una opción: ");
+                opcion = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("-------");
+                //verificar opcion ingresada por el usuario
+                if (opcion == 1)//si usuario ingreso 1
+                {
+                    Console.WriteLine("Ingrese un valor: ");//agregar valor al stack
+                    numero = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("-------");
+                    //adicionamos valor al stack
+                    miPila.Push(numero);//agrega al stack el valor ingresado por el usuario
+                }
+                else if (opcion == 2)
+                {
+                    //obtener elemento, saca el elemento del stack (remover o quitar del stack)
+                    numero = (int)miPila.Pop();
+
+                    //mostrar elemento obtenido
+                    Console.WriteLine($"el numero removido es: {numero}");
+                    
+                }
+                else if (opcion == 3)
+                {
+                    //limpiar todos los elementos del stack
+                    miPila.Clear();
+                    
+                }
+                else if (opcion == 4)
+                {
+                    //pedimos el valor a mostrar - consultar elemento
+                    Console.WriteLine("Ingrese el numero a consultar:");
+                    numero = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("-------");
+                    //validamos si el numero se encuentra en el stack
+                    encontrado = miPila.Contains(numero);//recibe como parametro el numero a buscar y devuelve verdadero si lo encuentra de lo contrario retornara falso
+                    Console.WriteLine("Encontrado {0}", encontrado);
+                    
+                }
+                else if (opcion == 5)
+                {
+
+                    foreach (int item in miPila)//recorremos los elementos de la pila
+                    {
+                        Console.WriteLine($"{item}");
+                    }
+                }
+                else if (opcion == 6)
+                {
+
+                    Console.WriteLine("Fin del Programa");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Opcion no contemplada en el Menú");
+                }
+
+                //mostrar información del stack
+                Console.WriteLine($"El Stack tiene {miPila.Count} elemento");
+
+            } while (opcion != 6);
+
+
+            Console.ReadKey();
         }
     }
 }
