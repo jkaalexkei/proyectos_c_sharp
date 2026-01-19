@@ -12,7 +12,7 @@ namespace coleccionQueue_Cola
         {
 
             //Colección Queue
-       
+        
 
             int opcion = 0;
             int numero = 0;
