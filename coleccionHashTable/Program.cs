@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,121 @@ namespace coleccionHashTable
     {
         static void Main(string[] args)
         {
+
+            int opcion = 0;
+            decimal numero = 0;
+            string key = "";
+            bool encontrado = false;
+
+            Hashtable miTabla = new Hashtable();//inicializamos el Hashtable
+
+            //se usa el bucle do while cuando al menos el programa se deba ejecutar una vez
+            do
+            {
+                //menu de opciones
+                Console.WriteLine("1. Add -> Adicion de elementos");
+                Console.WriteLine("2. Object -> obtener un elemento");
+                Console.WriteLine("3. Clear  -> Borrar hashtable");
+                Console.WriteLine("4. Contains o ContainsKey -> buscar segun una key");
+                Console.WriteLine("5. ContainsValue -> buscar por value");
+                Console.WriteLine("6. Remove -> borrar usando un key");
+                Console.WriteLine("7. listar -> listar elementos");
+                Console.WriteLine("8. Salir");
+                Console.WriteLine("Escoge una opción: ");
+                opcion = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("-------");
+                //verificar opcion ingresada por el usuario
+                if (opcion == 1)//si usuario ingreso 1
+                {
+                    Console.WriteLine("Ingrese un precio producto: ");//agregar valor al Hashtable
+                    numero = Convert.ToDecimal(Console.ReadLine());
+                    Console.WriteLine("Ingrese un nombre producto: ");//agregar valor al Hashtable
+                    key = Console.ReadLine();
+                    Console.WriteLine("-------");
+                    //adicionamos valor al Hashtable
+                    miTabla.Add(key,numero);//agrega al Hashtable el valor ingresado por el usuario (clave, valor)
+                    Console.WriteLine($"se agrego el elemento: key={key} - value={numero}");
+                }
+                else if (opcion == 2)
+                {
+                    //obtener elemento mediante la llave del hashtable y se convierte a objeto para poderlo mostrar
+                    Object llave = miTabla[key];
+
+                    //mostrar elemento obtenido
+                    Console.WriteLine($"el valor obtenido es: {llave}");
+
+                }
+                else if (opcion == 3)
+                {
+                    //limpiar todos los elementos del Hashtable
+                    miTabla.Clear();
+
+                }
+                else if (opcion == 4)
+                {
+                    //pedimos el valor a mostrar - consultar elemento
+                    Console.WriteLine("Ingrese el nombre a consultar:");
+                    key = Console.ReadLine();
+                    Console.WriteLine("-------");
+
+
+                    //validamos si el numero se encuentra en el Hashtable
+                    encontrado = miTabla.ContainsKey(key);//esto retorna verdadero o falso si el elemento aparece en el hashtable
+                    Console.WriteLine("Encontrado {0}", encontrado);
+
+                }
+                else if (opcion == 5)
+                {
+
+                    //pedimos el valor a mostrar - consultar elemento
+                    Console.WriteLine("Ingrese el precio a consultar:");
+                    numero = Convert.ToDecimal(Console.ReadLine());
+                    Console.WriteLine("-------");
+
+
+                    //validamos si el numero se encuentra en el Hashtable
+                    encontrado = miTabla.ContainsValue(numero);//esto retorna verdadero o falso si el elemento aparece en el hashtable
+                    Console.WriteLine("el precio encontrado {0}", encontrado);
+                }
+                else if (opcion == 6)
+                {
+
+                    //remover hashtable
+                    miTabla.Remove(key);
+                    Console.WriteLine("Elemento Borrado {0}", key);
+                }
+                else if (opcion == 7)
+                {
+
+                    //listar hashtable
+                    foreach (DictionaryEntry tabla in miTabla)//recorremos los elementos de la pila
+                    {
+                        Console.WriteLine($"key={tabla.Key} - Value={tabla.Value}");//para leer los valores se debe hacer a traves de la clave y valor
+                    }
+                    Console.WriteLine("-------");
+                }
+                else if (opcion == 8)
+                {
+
+                    Console.WriteLine("Fin del Programa");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Opcion no contemplada en el Menú");
+                }
+
+                //mostrar información del Hashtable
+                Console.WriteLine($"El Hashtable tiene {miTabla.Count} elemento");
+                
+
+            } while (opcion != 8);
+
+
+            Console.ReadKey();
+
+
+
         }
     }
 }
