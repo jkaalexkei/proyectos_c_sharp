@@ -53,12 +53,6 @@ namespace ejercicioDosArrayList
             }
             
 
-
-
-
-
-
-
         }
     }
 }

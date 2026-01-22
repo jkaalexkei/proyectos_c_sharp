@@ -27,7 +27,7 @@ namespace ejercicioUnoColeccionesArrayList
              
              
              */ 
-
+             
             int cantidad;
             string palabra, palabraBuscar;
             bool encontrado = false;
