@@ -49,7 +49,8 @@ namespace ejercicioUnoColeccionStack
             {
                 Console.Write(item);
             }
-            Console.WriteLine("\n----usando Metodo Pop()------");
+            Console.WriteLine("\nCantidad de elementos {0} en el stack", listaBinario.Count);
+            Console.WriteLine("\n----usando Metodo Pop()------");//aqui tambien extraemos los valores del stack con la diferencia que se borran los valores del stack
             while (listaBinario.Count > 0)
             {
                 Console.Write(listaBinario.Pop());
@@ -57,6 +58,7 @@ namespace ejercicioUnoColeccionStack
 
 
             Console.WriteLine("\nFin del Programa");
+            Console.WriteLine("Cantidad de elementos {0} en el stack",listaBinario.Count);
             Console.ReadKey();
 
 
