@@ -26,7 +26,7 @@ namespace ejercicioUnoColeccionesArrayList
             Ejemplo de salida por pantalla
              
              
-             */
+             */ 
 
             int cantidad;
             string palabra, palabraBuscar;
