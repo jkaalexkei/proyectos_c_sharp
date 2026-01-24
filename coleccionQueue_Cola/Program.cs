@@ -45,7 +45,7 @@ namespace coleccionQueue_Cola
                 else if (opcion == 2)
                 {
                     //obtener elemento, saca el elemento del Queue (remover o quitar del Queue)
-                    numero = (int)miFila.Dequeue();
+                    numero = (int)miFila.Dequeue();//se indica que va a devolver un entero
 
                     //mostrar elemento obtenido
                     Console.WriteLine($"el numero removido es: {numero}");
