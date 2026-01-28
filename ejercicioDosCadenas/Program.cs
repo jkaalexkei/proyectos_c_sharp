@@ -35,7 +35,7 @@ namespace ejercicioDosCadenas
 
             for (int i = cant - 1; i >= 0; i--)
             {
-                invertido[i] = texto[i].ToString();//porque esta linea me da un error de conversion implicita?
+                invertido[i] = texto[i].ToString();
                 Console.Write(invertido[i]);
             }
             Console.WriteLine("");
