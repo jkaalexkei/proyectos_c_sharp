@@ -184,8 +184,22 @@ namespace documentacionMnejoCadenas
             string r3 = cadenaEjemplo3.Replace("Prueba","Ejemplo");
             Console.WriteLine("Resultado despues reemplazar");
             Console.WriteLine("->"+r3);
-            
 
+            //------------------------------------------
+            //Quitar espacios en blanco de una cadena al principio o final del texto
+
+            string texto = "   Hola Mundo    ";
+            Console.WriteLine("Uso de Trim(), TrimStar() y TrimEnd() ");
+            
+            Console.WriteLine(texto);
+            Console.WriteLine(texto.Trim());
+            Console.WriteLine(texto.TrimStart());
+            Console.WriteLine(texto.TrimEnd());
+            Console.WriteLine("Uso de ToLower() y ToUpper()");
+            Console.WriteLine(texto);
+            Console.WriteLine(texto.ToLower());
+            Console.WriteLine(texto.ToUpper());
+           
 
 
 
