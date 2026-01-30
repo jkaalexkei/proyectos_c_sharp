@@ -15,7 +15,7 @@ namespace estructuras
             public int edad;
 
             //sobreescribir metodo tostring()
-            public override string ToString()//permite modificar el comportamiento del metodo en funcion de la necesidad del programa, no requiere parametro y devuelve un objeto dle tipo string
+            public override string ToString()//permite modificar el comportamiento del metodo en funcion de la necesidad del programa, no requiere parametro y devuelve un objeto del tipo string
             {
 
                 StringBuilder sbcadena = new StringBuilder();//es una clase que provee .net permite crear cadenas de forma eficiente, se puede usar en lugar de concatenacion, permite agregar información especial, permite colocar lista de variables
