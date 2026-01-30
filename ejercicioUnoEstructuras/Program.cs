@@ -55,7 +55,7 @@ namespace ejercicioUnoEstructuras
                 Console.Write("Email: ");
                 agenda[i].Email = Console.ReadLine();
             }
-
+               
             Console.WriteLine("Lista de contactos: ");
 
             foreach (Contacto item in agenda)
