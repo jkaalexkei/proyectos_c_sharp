@@ -55,7 +55,9 @@ Para declarar una enumeración usamos el siguiente formato:
 
     enum nombre {valor1, valor2, …, valorn};
 
+son constantes con nombre
 
+sirven para representar y manejar valores fijos(constantes) en un programa
 
  
  */
