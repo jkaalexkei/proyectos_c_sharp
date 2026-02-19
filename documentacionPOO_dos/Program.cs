@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Math;//importación de una clase estatica
 
 namespace documentacionPOO_dos
 {
@@ -49,7 +51,39 @@ namespace documentacionPOO_dos
 
             otraPrueba.llamada();
             segundaPrueba.llamada();
+            Prueba terceraPrueba = new Prueba();
+            Console.WriteLine($"Numero de objetos creados de tipo Prueba son: {Prueba.ContadorObjetos()}");
 
+
+            //declaracion de una variable anonima
+            var claseAnonima = new 
+            { 
+                nombre = "alex",
+                edad=40
+            };
+            
+           
+
+            var otraClaseAnonima = new
+            {
+                nombre = "pedro",
+                edad = 34
+            };
+
+            Console.WriteLine(claseAnonima.nombre);
+
+            claseAnonima = otraClaseAnonima;
+
+            Console.WriteLine(claseAnonima.nombre);
+
+
+
+
+        }
+
+        static int miFuncion()
+        {
+            return 10;
         }
     }
 
