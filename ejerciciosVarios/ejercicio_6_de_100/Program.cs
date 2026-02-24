@@ -18,10 +18,10 @@ namespace ejercicio_6_de_100
              */
             int n1, n2, resModulo;
 
-            n1 = 10;
+            n1 = 7;
             n2 = 2;
 
-            resModulo = n1 % n2;
+            resModulo = n1 % n2;//retorna el residuo de una división
 
             Console.WriteLine("El modulo es: {0}",resModulo);
 
