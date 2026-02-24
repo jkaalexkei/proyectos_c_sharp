@@ -10,11 +10,16 @@ namespace herencia_instruccion_base
     {
         static void Main(string[] args)
         {
-            Hijo1 nombreHijo1 = new Hijo1("Alex");
-            Console.WriteLine("El nombre del hijo 1 es: " + nombreHijo1.getNombre());
+
+            Padre soyPadre = new Padre("keidy");
+            soyPadre.saludar();
+            Padre soyHijo = new Hijo1("alex");
+            soyHijo.saludar();
+
+            Padre nuevoPadre = new Padre("");
+            nuevoPadre.
             
-            Hijo2 nombreHijo2 = new Hijo2("Keidy");
-            Console.WriteLine($"El nombre del hijo 2 es {nombreHijo2.getNombre()} y {nombreHijo2.Profesional()}");
+            
         }
            
     }
@@ -28,14 +33,19 @@ namespace herencia_instruccion_base
             this.nombre = nombre;
         }
 
-        public void saludar()
+        public  virtual void saludar()
         {
-            Console.WriteLine("estoy saludando");
+            Console.WriteLine("Soy padre y estoy saludando");
         }
 
         public string getNombre()
         {
             return this.nombre;
+        }
+
+        protected void Mensaje()
+        {
+            Console.WriteLine("Hola Mundo");
         }
 
     }
@@ -45,10 +55,17 @@ namespace herencia_instruccion_base
         public Hijo1(string nombreHijo1) : base(nombreHijo1)
         {
         }
+
+        public override void saludar()
+        {
+            Console.WriteLine($"Soy hijo y estoy saludando ");
+        }
         public void estudiar()
         {
             Console.WriteLine("Estoy estudiando");
+            Mensaje();
         }
+        
     }
 
     class Hijo2 : Padre
@@ -60,5 +77,7 @@ namespace herencia_instruccion_base
         {
             return "Estoy en la universidad";
         }
+        
+        
     }
 }
