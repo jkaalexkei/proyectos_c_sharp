@@ -12,7 +12,7 @@ namespace ejercicioHerencia
         {
             Console.WriteLine("Probando el avion");
             Avion miAvion = new Avion();
-            miAvion.arrancaMotor("rummmmmmmmmmmm");
+            miAvion.arrancaMotor("rummmmmmmmmmmm"); 
             miAvion.despegar();
             miAvion.conducir();//en este metodo se aplica polimorfismo, es un metodo heredado que se comporta como metodo de la clase hija
             miAvion.aterrizar();
