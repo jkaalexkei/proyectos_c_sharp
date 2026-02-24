@@ -17,7 +17,7 @@ namespace herencia_instruccion_base
             soyHijo.saludar();
 
             Padre nuevoPadre = new Padre("");
-            nuevoPadre.
+            
             
             
         }
