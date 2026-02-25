@@ -19,7 +19,7 @@ namespace ejercicio_9_de_100
 
             Console.Write("Ingrese una frase corta: ");
             cadena = Console.ReadLine();
-            cadenaMayusculas = cadena.ToUpper();
+            cadenaMayusculas = cadena.ToUpper();//convertimos cadena a mayusculas
             Console.Write(cadenaMayusculas);
         }
     }
