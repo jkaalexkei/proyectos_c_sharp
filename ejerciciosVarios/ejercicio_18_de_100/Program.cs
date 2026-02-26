@@ -16,8 +16,8 @@ namespace ejercicio_18_de_100
             char letra = Console.ReadKey().KeyChar;//se usa para leer un solo caracter en la entrada
             //a la letra ingresada le sumamos 3 posiciones y que retorne la nueva letra
             char nuevaLetra = (char)(letra+3);//creamos una nueva variable que almacenara la nueva letra, para esto aplicamos un casteo o conversion de tipo de la (letra + 3) (que son las posiciones) y me de la nueva letra
-
-            Console.WriteLine("\n nueva letra: " + nuevaLetra);
+            Console.WriteLine();
+            Console.WriteLine("nueva letra: " + nuevaLetra);
 
         }
     }
