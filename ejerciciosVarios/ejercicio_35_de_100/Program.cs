@@ -14,9 +14,9 @@ namespace ejercicio_35_de_100
              escribir un programa que recorra un array de numeros usando foreach
              */
 
-            int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8 };
+            int[] numeros = { 1, 2, 3, 4, 5, 6, 7, 8 };//declaracion de un array
 
-            foreach (int item in numeros)
+            foreach (int item in numeros)// no necesita saber indices para hacer un recorrido
             { 
                 Console.WriteLine(item);
             }
