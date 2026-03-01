@@ -31,6 +31,12 @@ namespace ejercicio_38_de_100
                     Console.WriteLine("intente otra vez");
                 }
             }
+
+            //esta es la forma conceptual
+            while (true)
+            {
+                break;
+            }
             
           
         }
