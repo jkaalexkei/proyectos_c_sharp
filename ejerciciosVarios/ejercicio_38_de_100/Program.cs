@@ -13,7 +13,7 @@ namespace ejercicio_38_de_100
             /*
              escribe un programa que entre en un bucle infinito y salga con break;
              */
-            int numero = 0;
+            int numero = 0; 
 
             bool condicion = true;
 
