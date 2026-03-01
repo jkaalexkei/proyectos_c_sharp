@@ -28,7 +28,7 @@ namespace ejercicio_41_de_100
             Console.WriteLine("Valores registrados");
             foreach (int items in numero)
             {
-                Console.WriteLine(items);
+                Console.WriteLine(string.Join(",",items));//separa los numeros por coma mediante el uso del string.joing
             }
         }
     }
