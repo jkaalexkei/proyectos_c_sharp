@@ -17,7 +17,7 @@ namespace ejercicio_43_de_100
 
             for (int i = 0; i < enteros.Length;i++)
             {
-                suma += enteros[i];
+                suma += enteros[i];//aqui sumamos los elementos
             }
 
             Console.WriteLine("La suma de elementos del array es: {0}",suma);
