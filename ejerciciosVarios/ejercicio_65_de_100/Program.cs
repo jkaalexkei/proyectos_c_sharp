@@ -10,6 +10,14 @@ namespace ejercicio_65_de_100
     {
         static void Main(string[] args)
         {
+            //crear una clase estudiante que herede de persona y añade una propiedad matricula
+             Estudiante estudiante = new Estudiante();
+
+            estudiante.nombre = "Alex";
+            estudiante.matricula = 1;
+
+            Console.WriteLine(estudiante.nombre);
+            Console.WriteLine(estudiante.matricula);
         }
     }
 }
