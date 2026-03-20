@@ -4,17 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ejercicio_64_de_100
+namespace ejercicio_65_de_100
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-
-            //añadir un constructor a la clase persona que incialice las propiedades
-
-            Persona persona = new Persona("Alex");
-            persona.saludar();
         }
     }
 }
