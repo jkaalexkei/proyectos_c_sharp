@@ -25,16 +25,17 @@ namespace ejercicio_71_de_100
             //+++++++++++++++++++++++++++++
             Matematicas dividir = new Matematicas();
             dividir.Dividir(3, 0);
+            dividir.Dividir(7, 9);
         }
     }
     class Matematicas 
     {
-        public void Dividir(int a, int b)
+        public void Dividir(float a, float b)
         {
             try
             {
-                int r = a / b;
-                Console.WriteLine(r);
+                float r = a / b;
+                Console.WriteLine("{0:F2}",r);//esto imprime solo dos lugares decimales
             }
             catch (DivideByZeroException) 
             {
