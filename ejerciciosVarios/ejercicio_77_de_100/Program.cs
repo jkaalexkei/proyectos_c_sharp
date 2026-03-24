@@ -11,7 +11,7 @@ namespace ejercicio_77_de_100
         static void Main(string[] args)
         {
             //escribe un metodo que lance una excepcion y manejala en otro lugar
-            try
+            try 
             {
                 LanzarExcepcion();//aqui manejamos la excepción que viene del metodo
                 
