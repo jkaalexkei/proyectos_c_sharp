@@ -63,6 +63,7 @@
             this.chkMac.TabIndex = 1;
             this.chkMac.Text = "Mac";
             this.chkMac.UseVisualStyleBackColor = true;
+            this.chkMac.CheckedChanged += new System.EventHandler(this.chkMac_CheckedChanged);
             // 
             // chkXiami
             // 

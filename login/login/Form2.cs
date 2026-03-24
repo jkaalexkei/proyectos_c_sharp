@@ -57,5 +57,10 @@ namespace login
         {
             this.Close();
         }
+
+        private void chkMac_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
