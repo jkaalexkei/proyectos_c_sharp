@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;// usar la clase File y otras utilidades relacionadas con archivos y directorios.
+using System.IO;// system para usar la clase File y otras utilidades relacionadas con archivos y directorios.
 namespace ejercicio_83_de_100
 {
     class Archivo
