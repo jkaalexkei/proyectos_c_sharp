@@ -23,6 +23,7 @@ namespace ejercicio_84_de_100
         {
             try
             {
+                //las rutas tanto origen como destino requieren tener al final el nombre del archivo que se desea copiar
                 string rutaOrigen = "C:\\Users\\JKAALEXKEI\\source\\repos\\ejerciciosVarios\\ejercicio_84_de_100\\origen\\pruebaCopia.cs";
                 string rutaDestino = "C:\\Users\\JKAALEXKEI\\source\\repos\\ejerciciosVarios\\ejercicio_84_de_100\\destino\\pruebaCopia.cs";
                 Archivo archivo = new Archivo();
