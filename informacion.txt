@@ -1,16 +1,5 @@
 Hola Mundo
 
-
-
-
-
 Esto es una prueba de lectura de archivo
-
-
-
-
-
-
-
 
 fin.
